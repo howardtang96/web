@@ -37,7 +37,7 @@
   $contact->smtp = array(
     'host' => 'muchacotrading.com',
     'username' => 'info@muchachotrading.com',
-    'password' => 'Aa19960419wah!',
+    'password' => '',
     'port' => '587'
 
   $contact->add_message( $_POST['name'], 'From');

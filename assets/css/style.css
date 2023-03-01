@@ -90,7 +90,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ff7f5d;
+  background: #582f24;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -104,7 +104,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ff9f86;
+  background: #582f24;
   color: #fff;
 }
 
@@ -117,7 +117,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(21, 5, 23, 0.25);
+  background: #582f24);
   transition: all 0.5s;
   z-index: 997;
   position: relative;
@@ -132,7 +132,7 @@ h6 {
 
 #header.fixed-top,
 #header.header-inner-pages {
-  background: rgba(21, 5, 23, 0.8);
+  background: #582f24;
 }
 
 #header.fixed-top {
@@ -255,7 +255,7 @@ h6 {
   height: 2px;
   bottom: -7px;
   left: 0;
-  background-color: #ff7f5d;
+  background-color: #582f24;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -309,7 +309,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ff7f5d;
+  color: #122408;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1402,7 +1402,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #62176b;
+  color: #582f24;
 }
 
 .contact .info .email,
@@ -1648,7 +1648,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
+  background: #582f24;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1667,7 +1667,7 @@ section {
 }
 
 #footer .footer-bottom {
-  border-top: 1px solid #3b0e41;
+  border-top: 1px solid #582f24;
   z-index: 2;
   position: relative;
   padding-top: 40px;

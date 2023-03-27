@@ -958,7 +958,7 @@ section {
 
 .portfolio #portfolio-flters li.filter-active::before,
 .portfolio #portfolio-flters li.filter-active::after {
-  color: #ff7f5d;
+  color: #3ca1d7d8;
 }
 
 .portfolio .portfolio-item {

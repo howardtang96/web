@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://muchachotrading.com/</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/about-us.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/index.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/#</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/our-value.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/products.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/contact.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/./index-es.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://muchachotrading.com/./index-pg.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+	</urlset>
+

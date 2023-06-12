@@ -37,7 +37,7 @@
 
 <body>
 
- 
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid d-flex align-items-center justify-content-lg-between">
@@ -59,12 +59,13 @@
             <ul>
               <li><a href="#" language="en"><img src="https://www.countryflagicons.com/SHINY/32/US.png">English</a>
               </li>
-              <li><a href="./index-es.html" language="es"><img src="https://www.countryflagicons.com/SHINY/32/ES.png">Español</a>
+              <li><a href="./index-es.html" language="es"><img
+                    src="https://www.countryflagicons.com/SHINY/32/ES.png">Español</a>
               </li>
-              </li>
-              <li><a href="./index-pg.html" langauge="pg"><img
-                    src="https://www.countryflagicons.com/SHINY/32/BR.png">Português</a></li>
-            </ul>
+          </li>
+          <li><a href="./index-pg.html" langauge="pg"><img
+                src="https://www.countryflagicons.com/SHINY/32/BR.png">Português</a></li>
+        </ul>
         </ul>
 
     </div>
@@ -78,19 +79,19 @@
 
   <main id="main">
 
-      <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
-    <div class="container">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
 
-      <ol>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-       
-      </ol>
-     
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
 
-    </div>
-  </section><!-- End Breadcrumbs -->
+        </ol>
+
+
+      </div>
+    </section><!-- End Breadcrumbs -->
 
 
     <!-- ======= Portfolio Section ======= -->
@@ -100,15 +101,54 @@
         <div class="section-title">
           <h2><a href="products-details.html">Products</a></h2>
           <p>We are providing following products or click <A href="products-details.html">here</A></p>
+          <button onclick="toggleLanguage()">Spanish/English</button>
         </div>
+
+        <script>
+          var isEnglish = true; // Flag to track the current language
+
+          function toggleLanguage() {
+            var contentElement = document.getElementById('portfolio-flters'); // Get the content element
+
+            if (isEnglish) {
+              contentElement.innerHTML = `
+                  <ul id="portfolio-flters" class="d-flex justify-content-center">
+    <li data-filter="*" class="filter-active">Todos</li>
+    <li data-filter=".filter-dash">Dashcam</li>
+    <li data-filter=".filter-drone">Dron</li>
+    <li data-filter=".filter-card">Tarjeta TF/SD</li>
+    <li data-filter=".filter-indust">Industrial</li>
+    <li data-filter=".filter-EC">Cigarrillos electrónicos</li>
+    <li data-filter=".filter-novelty">Productos de novedad</li>
+    </ul>
+    
+    
+                  `;
+              isEnglish = false;
+            } else {
+              contentElement.innerHTML = `
+                  <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-dash">Dashcam</li>
+          <li data-filter=".filter-drone">Drone</li>
+          <li data-filter=".filter-card">TF/SD card</li>
+          <li data-filter=".filter-indust">Industrial</li>
+          <li data-filter=".filter-EC">Eletronic Cigarettes</li>
+          <li data-filter=".filter-novelty">Novelty products</li>
+        </ul>
+                  `;
+              isEnglish = true;
+            }
+          }
+        </script>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
           <li data-filter="*" class="filter-active">All</li>
           <li data-filter=".filter-dash">Dashcam</li>
           <li data-filter=".filter-drone">Drone</li>
           <li data-filter=".filter-card">TF/SD card</li>
-          <li data-filter=".filter-fiberglass">Fiberglass mat</li>
-          <li data-filter=".filter-MOF">Vegetable-Based Ink (Mineral oil free,MOF)</li>
+          <li data-filter=".filter-indust">Industrial</li>
+          <li data-filter=".filter-EC">Eletronic Cigarettes</li>
           <li data-filter=".filter-novelty">Novelty products</li>
         </ul>
 
@@ -119,7 +159,7 @@
             <div class="portfolio-info">
               <h4>3 in 1 Dashcam</h4>
               <p>3 in 1 Dashcam</p>
-            
+
               <a href="./dash-bg.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -129,7 +169,7 @@
             <div class="portfolio-info">
               <h4>70mai 2K dashcam</h4>
               <p>70mai 2K dashcam</p>
-              
+
               <a href="./dash-he.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -139,7 +179,7 @@
             <div class="portfolio-info">
               <h4>Motorbike 3 in 1 dashcam</h4>
               <p>Motorbike 3 in 1 dashcam</p>
-              
+
               <a href="./dash-bg.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -170,7 +210,7 @@
               <h4>Drone K3</h4>
               <p>4K camera x 2 drone in reasonable price
               </p>
-                     <a href="./drone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="./drone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -192,7 +232,7 @@
               <h4>Termos Digitales 1000ml y 1500ml</h4>
               <p>DIY services
               </p>
-                <a href="./thermos.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="./thermos.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -203,7 +243,7 @@
               <h4>App Control Led Bluetooth Smart Bulb</h4>
               <p>consulta-nos
               </p>
-               <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -217,26 +257,27 @@
               <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
- 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-fiberglass">
-            <div class="portfolio-img"><img src="./assets/img/portfolio/aee353df0eaf2702e0170403034475f7.jpg" class="img-fluid" alt="">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-indust">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/aee353df0eaf2702e0170403034475f7.jpg"
+                class="img-fluid" alt="">
             </div>
             <div class="portfolio-info">
               <h4>Fiberglass mat 300/450</h4>
               <p>consulta-nos
               </p>
-               <a href="./index.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="./industrial.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-MOF">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-indust">
             <div class="portfolio-img"><img src="./assets/img/portfolio/vegetable ink.jpg.png" class="img-fluid" alt="">
             </div>
             <div class="portfolio-info">
               <h4>Vegetable-Based Ink (Mineral oil free,MOF)</h4>
               <p>consulta-nos
               </p>
-               <a href="./index.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="./industrial.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">

@@ -60,12 +60,13 @@
             <ul>
               <li><a href="#" language="en"><img src="https://www.countryflagicons.com/SHINY/32/US.png">English</a>
               </li>
-              <li><a href="./index-es.html" language="es"><img src="https://www.countryflagicons.com/SHINY/32/ES.png">Español</a>
+              <li><a href="./index-es.html" language="es"><img
+                    src="https://www.countryflagicons.com/SHINY/32/ES.png">Español</a>
               </li>
-              </li>
-              <li><a href="./index-pg.html" langauge="pg"><img
-                    src="https://www.countryflagicons.com/SHINY/32/BR.png">Português</a></li>
-            </ul>
+          </li>
+          <li><a href="./index-pg.html" langauge="pg"><img
+                src="https://www.countryflagicons.com/SHINY/32/BR.png">Português</a></li>
+        </ul>
         </ul>
 
     </div>
@@ -120,14 +121,73 @@
                   <img src="assets/img/portfolio/mt80-1.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/img/portfolio/mt80-2.jpg" alt="">
-                  </div>
+                  <img src="assets/img/portfolio/mt80-2.jpg" alt="">
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
+          <script>
+            var isEnglish = true; // Flag to track the current language
 
-          <div class="col-lg-4">
+            function toggleLanguage() {
+              var contentElement = document.getElementById('info'); // Get the content element
+
+              if (isEnglish) {
+                contentElement.innerHTML = `
+                <div class="portfolio-info">
+                  <h3>Información del producto</h3>
+              <ul>
+                <li><strong>Categoría</strong>: Dashcam en presupuesto</li>
+                <li><strong>Modelo</strong>: 170 grados 1080p Cardvr 3 en 1</li>
+                <li><strong>Cámara</strong>:3</li>
+                <li><strong>Idioma</strong>: Inglés / Español / Portugués / Chino </li>
+                <li><strong>Función</strong>: G-Sensor / Grabación en bucle y grabación de voz</li>
+              </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Información del producto</h3>
+              <ul>
+              <li><strong>Categoría</strong>: Dashcam a presupuesto</li>
+              <li><strong>Modelo</strong>: 2 en 1 Dashcam 1080P para motocicleta</li>
+              <li><strong>Grado</strong>: frontal: 120 grados / trasero: 90 grados </li>
+              <li><strong>Idioma</strong>: inglés / español / portugués / chino </li>
+              <li><strong>Función</strong>: G-Sensor / Grabación en bucle y grabación de voz </li>
+              <li><strong>Impermeable</strong>: sí, IP65 </li>
+             </ul>
+             </div>
+                `;
+                isEnglish = false;
+              } else {
+                contentElement.innerHTML = `
+                <div class="portfolio-info">
+                <h3>Product information</h3>
+              <ul>
+                <li><strong>Category</strong>: Dashcam in budget</li>
+                <li><strong>Model</strong>: 170 degree 1080p Cardvr 3 in 1</li>
+                <li><strong>Camera</strong>:3</li>
+                <li><strong>Language</strong>: English/Spanish/Portuguese/Chinese </li>
+                <li><strong>Function</strong>: G-Sensor / Loop recording and voice recording</li>
+              </ul>
+      </div>
+
+      <div class="portfolio-info">
+              <h3>Product information</h3>
+              <ul>
+                <li><strong>Category</strong>: Dashcam in budget</li>
+                <li><strong>Model</strong>: 2 in 1 1080P Dashcam for Motorbike</li>
+                <li><strong>Degree</strong>: front : 120 degree / rear : 90 degree </li>
+                <li><strong>Language</strong>: English/Spanish/Portuguese/Chinese </li>
+                <li><strong>Function</strong>: G-Sensor / Loop recording and voice recording </li>
+                <li><strong>Waterproof</strong>: Yes , IP65 </li>
+              </ul>
+              </div>
+                `;
+                isEnglish = true;
+              }
+            }
+          </script>
+          <div class="col-lg-4" id="info">
             <div class="portfolio-info">
               <h3>Product information</h3>
               <ul>
@@ -152,25 +212,26 @@
               </ul>
             </div>
 
+           </div>
+           <button onclick="toggleLanguage()">Spanish/English</button>
 
 
-            
             <div class="portfolio-description">
               <h2>Quote your price now</h2>
               <p>
-                
-                <div class="email">
-                    <i class="bi bi-envelope"></i>
-                    <h4>Email:</h4>
-                    <p><a href="mailto:info@muchachotrading.com">info@muchachotrading.com</a></p>
-                  </div>
-  
-                  <div class="phone">
-                    <i class="bi bi-phone"></i>
-                    <h4>Call:</h4>
-                    <p><a href="https://api.whatsapp.com/send?phone=85266800405&text=Hello,I would like to know more">
-                        +852 66800405</a></p>
-                  </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:info@muchachotrading.com">info@muchachotrading.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p><a href="https://api.whatsapp.com/send?phone=85266800405&text=Hello,I would like to know more">
+                    +852 66800405</a></p>
+              </div>
 
               </p>
             </div>

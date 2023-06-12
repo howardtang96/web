@@ -122,8 +122,45 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+          <script>
+            var isEnglish = true; // Flag to track the current language
+            
+            function toggleLanguage() {
+              var contentElement = document.getElementById('info'); // Get the content element
+              
+              if (isEnglish) {
+                contentElement.innerHTML = `
+               
+            <h3>Información del producto</h3>
+            <ul>
+              <li><strong>Categoría</strong>: Dashcam de gama alta</li>
+              <li><strong>Modelo</strong>: Dashcam 70Mai 2K de ángulo de visión de 170 grados</li>
+              <li><strong>Visión nocturna</strong>: Compatible completamente con el sensor Sony </li>
+              <li><strong>Idioma</strong>: Inglés/Español/Portugués/Chino </li>
+              <li><strong>Función</strong>: Sensor G / Grabación en bucle y grabación de voz / Revisión de aplicación</li>
+            </ul>
+         
+                `;
+                isEnglish = false;
+              } else {
+                contentElement.innerHTML = `
+                
+            <h3>Product information</h3>
+            <ul>
+              <li><strong>Category</strong>: Dashcam in high-end</li>
+              <li><strong>Model</strong>: 170 degree 70Mai 2K Dashcam </li>
+              <li><strong>Nightview</strong>: Fully supported by Sony Sensor </li>
+              <li><strong>Language</strong>: English/Spanish/Portuguese/Chinese </li>
+              <li><strong>Function</strong>: G-Sensor / Loop recording and voice recording / App review</li>
+            </ul>
+         
 
-          <div class="portfolio-info">
+                `;
+                isEnglish = true;
+              }
+            }
+          </script>
+          <div class="portfolio-info" id="info">
             <h3>Product information</h3>
             <ul>
               <li><strong>Category</strong>: Dashcam in high-end</li>
@@ -135,7 +172,7 @@
           </div>
 
 
-
+          <button onclick="toggleLanguage()">Spanish/Englsih</button>
             
             <div class="portfolio-description">
               <h2>Quote your price now</h2>

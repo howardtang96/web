@@ -36,7 +36,49 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<script>
+  var isEnglish = true; // Flag to track the current language
+  
+  function toggleLanguage() {
+    var contentElement = document.getElementById('info')// Get the content element
+    
+    if (isEnglish) {
+      contentElement.innerHTML = `
+   
 
+        <div class="col-lg-4">
+            <div class="portfolio-info">
+                <h3>Category</h3>
+                <ul>
+                    <li><strong><a href="dash.html">Cámara de tablero</a></strong></li>
+                    <li><strong><a href="sdcard.html">Tarjeta TF/SD</a></strong></li>
+                    <li><strong><a href="drone.html">Drone</a></strong></li>
+                    <li><strong><a href="novelty.html">Productos Novedosos</a></strong></li>
+                    <li><strong><a href="industrial.html">Productos Industriales</a></strong></li>
+                </ul>
+            </div>
+      `;
+      isEnglish = false;
+    } else {
+      contentElement.innerHTML = `
+    
+  
+          <div class="col-lg-4">
+            <div class="portfolio-info" id="info">
+              <h3>Category</h3>
+              <ul>
+                <li><strong><a href="dash.html">Dashcam</a></strong></li>
+                <li><strong><a href="sdcard.html">Memory Card</a></strong></li>
+                <li><strong><a href="drone.html">Drone</a></strong></li>
+                <li><strong><a href="novelty.html">Novelty</a></strong></li>
+                <li><strong><a href="industrial.html">Industrial products</a></strong></li>
+              </ul>
+            </div>
+      `;
+      isEnglish = true;
+    }
+  }
+</script>
 <body>
 
   <!-- ======= Header ======= -->
@@ -83,7 +125,7 @@
         <ol>
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
-          <li><a href="products-cat.html">Products Category</a></li>
+          <li><a href="products-details.html">Products Category</a></li>
         </ol>
         <h2>Products Category</h2>
 
@@ -93,7 +135,7 @@
     <!-- ======= Portfolio Details Section ======= -->
   
           <div class="col-lg-4">
-            <div class="portfolio-info">
+            <div class="portfolio-info" id="info">
               <h3>Category</h3>
               <ul>
                 <li><strong><a href="dash.html">Dashcam</a></strong></li>
@@ -103,7 +145,7 @@
                 <li><strong><a href="industrial.html">Industrial products</a></strong></li>
               </ul>
             </div>
-
+            <button onclick="toggleLanguage()">Spanish/English</button>
 
 
 

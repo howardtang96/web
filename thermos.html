@@ -129,20 +129,56 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-
-                    <div class="portfolio-info">
+                    <script>
+                        var isEnglish = true; // Flag to track the current language
+                        
+                        function toggleLanguage() {
+                          var contentElement = document.getElementById('portfolio-info'); // Get the content element
+                          
+                          if (isEnglish) {
+                            contentElement.innerHTML = `
+                              <h3>Detalles del producto:</h3>
+                              <ul>
+                                <li><strong>Material</strong>: Acero inoxidable SAE 304 (350-1000 ml) / acero inoxidable 316 (1500 ml)</li>
+                                <li><strong>Capacidad</strong>: 350 ml, 500 ml, 800 ml, 1000 ml y 1500 ml</li>
+                                <li><strong>Tamaño</strong>: 19.5x6.8 cm / 21.5x6.8 cm / 23.5x8 cm / 28x8 cm / 33x9 cm</li>
+                                <li><strong>Aislamiento térmico</strong>: 6-12 horas</li>
+                                <li><strong>Versión</strong>: Temperatura</li>
+                                <li><strong>OEM/DIY</strong>: Soporte</li>
+                              </ul>
+                            `;
+                            isEnglish = false;
+                          } else {
+                            contentElement.innerHTML = `
+                              <h3>Product Details:</h3>
+                              <ul>
+                                <li><strong>Material</strong>: SAE 304 stainless steel (350-1000ml)/316 stainless steel (1500ml)</li>
+                                <li><strong>Capacity</strong>: 350ml, 500ml, 800ml, 1000ml & 1500ml</li>
+                                <li><strong>Size</strong>: 19.5x6.8 cm/ 21.5x6.8cm/ 23.5x8 cm/ 28x8 cm / 33x9 cm</li>
+                                <li><strong>Heat Insulation</strong>: 6-12 hours</li>
+                                <li><strong>Version</strong>: Temperature</li>
+                                <li><strong>OEM/DIY</strong>: Support</li>
+                              </ul>
+                            `;
+                            isEnglish = true;
+                          }
+                        }
+                      </script>
+                    <div class="portfolio-info" id="portfolio-info">
                         <h3>Product Details:</h3>
                         <ul>
                             <li><strong>Material</strong>: SAE 304 stainless steel (350-1000ml)/316 stainless steel(1500ml)
                             </li>
-                            <li><strong>Capacity</strong>: 350ml, 500ml, 800ml, 1000ml & 1500ml </li>
+                            <li><strong>Capacity</strong>:  350ml, 500ml, 800ml, 1000ml & 1500ml </li>
                             <li><strong>Size</strong>: 19.5x6.8 cm/ 21.5x6.8cm/ 23.5x8 cm/ 28x8 cm / 33x9 cm</li>
                             <li><strong>Heat Insulation</strong>: 6-12 hours</li>
                             <li><strong>Version</strong>: Tempreture </li>
                             <li><strong>OEM/DIY</strong>: Support </li>
                         </ul>
                     </div>
-
+                    <button onclick="toggleLanguage()">Spanish/English</button>
+             
+                
 
 
                     <div class="portfolio-description">

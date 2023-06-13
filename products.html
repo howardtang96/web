@@ -93,6 +93,48 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
+    <script>
+      var isEnglish = true; // Flag to track the current language
+
+      function toggleLanguage() {
+        var contentElement = document.getElementById('portfolio-flters'); // Get the content element
+
+        if (isEnglish) {
+          contentElement.innerHTML = `
+          
+              <ul id="portfolio-flters" class="d-flex justify-content-center">
+                 <li data-filter="*" class="filter-active">Todos</li>
+                 <li data-filter=".filter-dash">Dashcam</li>
+                 <li data-filter=".filter-drone">Dron</li>
+                 <li data-filter=".filter-card">Tarjeta TF/SD</li>
+                 <li data-filter=".filter-indust">Industrial</li>
+                 <li data-filter=".filter-EC">Cigarrillos electrónicos</li>
+                 <li data-filter=".filter-novelty">Productos de novedad y otros</li>
+                   </ul>
+
+              
+      <
+    </div>
+              `;
+          isEnglish = false;
+        } else {
+          contentElement.innerHTML = `
+          
+  
+              <ul id="portfolio-flters" class="d-flex justify-content-center">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-dash">Dashcam</li>
+                <li data-filter=".filter-drone">Drone</li>
+                <li data-filter=".filter-card">TF/SD card</li>
+                <li data-filter=".filter-indust">Industrial</li>
+                <li data-filter=".filter-EC">Eletronic Cigarettes</li>
+                <li data-filter=".filter-novelty">Novelty products and other</li>
+             </ul>
+              `;
+          isEnglish = true;
+        }
+      }
+    </script>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -103,60 +145,10 @@
           <p>We are providing following products or click <A href="products-details.html">here</A></p>
           <p>Si buscas productos replica/AAA haz clic <a
               href="https://api.whatsapp.com/send?phone=85266800405&text=Hello,I would like to know more">aquí</p>
-          <button onclick="toggleLanguage()">Spanish/English</button>
+
+          <a><button onclick="toggleLanguage()">Spanish/English</button></a>
+
         </div>
-
-        <script>
-          var isEnglish = true; // Flag to track the current language
-
-          function toggleLanguage() {
-            var contentElement = document.getElementById('title')('portfolio-flters'); // Get the content element
-
-            if (isEnglish) {
-              contentElement.innerHTML = `
-              
-                  <ul id="portfolio-flters" class="d-flex justify-content-center">
-                    <li data-filter="*" class="filter-active">Todos</li>
-                     <li data-filter=".filter-dash">Dashcam</li>
-                     <li data-filter=".filter-drone">Dron</li>
-                     <li data-filter=".filter-card">Tarjeta TF/SD</li>
-                     <li data-filter=".filter-indust">Industrial</li>
-                     <li data-filter=".filter-EC">Cigarrillos electrónicos</li>
-                     <li data-filter=".filter-novelty">Productos de novedad y otros</li>
-                       </ul>
-
-                       <div class="section-title" id="title">
-          <h2><a href="products-details.html">Productos</a></h2>
-          <p>Estamos proporcionando los siguientes productos o haga clic <A href="products-details.html">aquí</A></p>
-          <p>Si buscas productos AAA haz clic <a
-              href="https://api.whatsapp.com/send?phone=85266800405&text=Hello,I would like to know more">aquí</p>
-   
-        </div>
-                  `;
-              isEnglish = false;
-            } else {
-              contentElement.innerHTML = `
-              <div class="section-title" id="title">
-          <h2><a href="products-details.html">Products</a></h2>
-          <p>We are providing following products or click <A href="products-details.html">here</A></p>
-          <p>If you are looking for AAA products click <a
-              href="https://api.whatsapp.com/send?phone=85266800405&text=Hello,I would like to know more">here</p>
-        
-        </div>
-                  <ul id="portfolio-flters" class="d-flex justify-content-center">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-dash">Dashcam</li>
-                    <li data-filter=".filter-drone">Drone</li>
-                    <li data-filter=".filter-card">TF/SD card</li>
-                    <li data-filter=".filter-indust">Industrial</li>
-                    <li data-filter=".filter-EC">Eletronic Cigarettes</li>
-                    <li data-filter=".filter-novelty">Novelty products and other</li>
-                 </ul>
-                  `;
-              isEnglish = true;
-            }
-          }
-        </script>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
           <li data-filter="*" class="filter-active">All</li>
@@ -179,160 +171,152 @@
               </p>
               <a href="./ec.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-dash">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/C2.png" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>3 in 1 Dashcam</h4>
-                <p>3 in 1 Dashcam</p>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dash">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/C2.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>3 in 1 Dashcam</h4>
+              <p>3 in 1 Dashcam</p>
 
-                <a href="./dash-bg.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-dash">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/K27.png" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>70mai 2K dashcam</h4>
-                <p>70mai 2K dashcam</p>
-
-                <a href="./dash-he.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-dash">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/MT80.png" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>Motorbike 3 in 1 dashcam</h4>
-                <p>Motorbike 3 in 1 dashcam</p>
-
-                <a href="./dash-bg.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/SD.png" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>Tf/SD card</h4>
-                <p>TF card from well-known Kodak with U3 and V30 standard, 80-100 MB/S</p>
-                <a href="./sdcard.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/SDA.png" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>Tf/SD card</h4>
-                <p>TF card from well-known Kodak with U3 and V30 standard + adapter, 80-100 MB/S</p>
-
-                <a href="./sdcard.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-drone">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/K3drone.png" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>Drone K3</h4>
-                <p>4K camera x 2 drone in reasonable price
-                </p>
-                <a href="./drone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-drone">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/P8prodrone.png" class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4>Drone P8</h4>
-                <p>8K camera x 2 drone in reasonable price
-                </p>
-                <a href="./drone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/termo sample.png" class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4>Termos Digitales 1000ml y 1500ml</h4>
-                <p>DIY services
-                </p>
-                <a href="./thermos.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/led-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4>App Control Led Bluetooth Smart Bulb</h4>
-                <p>consulta-nos
-                </p>
-                <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/wax-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4>Ne3</h4>
-                <p>consulta-nos
-                </p>
-                <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-indust">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/aee353df0eaf2702e0170403034475f7.jpg"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4>Fiberglass mat 300/450</h4>
-                <p>Jushi
-                </p>
-                <a href="./industrial.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-indust">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/vegetable ink.jpg.png" class="img-fluid"
-                  alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4>Vegetable-Based Ink (Mineral oil free,MOF)</h4>
-                <p>consulta-nos
-                </p>
-                <a href="./industrial.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/hair-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4></h4>
-                <p>2 in 1
-                </p>
-                <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-EC">
-              <div class="portfolio-img"><img src="./assets/img/portfolio/skey-1.png" class="img-fluid" alt="">
-              </div>
-              <div class="portfolio-info">
-                <h4></h4>
-                <p>Skey Eletronic Cigarettes
-                </p>
-                <a href="./ec.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-
-
+              <a href="./dash-bg.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dash">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/K27.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>70mai 2K dashcam</h4>
+              <p>70mai 2K dashcam</p>
+
+              <a href="./dash-he.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dash">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/MT80.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Motorbike 3 in 1 dashcam</h4>
+              <p>Motorbike 3 in 1 dashcam</p>
+
+              <a href="./dash-bg.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/SD.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Tf/SD card</h4>
+              <p>TF card from well-known Kodak with U3 and V30 standard, 80-100 MB/S</p>
+              <a href="./sdcard.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/SDA.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Tf/SD card</h4>
+              <p>TF card from well-known Kodak with U3 and V30 standard + adapter, 80-100 MB/S</p>
+
+              <a href="./sdcard.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drone">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/K3drone.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Drone K3</h4>
+              <p>4K camera x 2 drone in reasonable price
+              </p>
+              <a href="./drone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drone">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/P8prodrone.png" class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Drone P8</h4>
+              <p>8K camera x 2 drone in reasonable price
+              </p>
+              <a href="./drone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/termo sample.png" class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Termos Digitales 1000ml y 1500ml</h4>
+              <p>DIY services
+              </p>
+              <a href="./thermos.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/led-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>App Control Led Bluetooth Smart Bulb</h4>
+              <p>consulta-nos
+              </p>
+              <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/wax-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Ne3</h4>
+              <p>consulta-nos
+              </p>
+              <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-indust">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/aee353df0eaf2702e0170403034475f7.jpg"
+                class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Fiberglass mat 300/450</h4>
+              <p>Jushi
+              </p>
+              <a href="./industrial.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-indust">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/vegetable ink.jpg.png" class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Vegetable-Based Ink (Mineral oil free,MOF)</h4>
+              <p>consulta-nos
+              </p>
+              <a href="./industrial.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-novelty">
+            <div class="portfolio-img"><img src="./assets/img/portfolio/hair-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>2 in 1
+              </p>
+              <a href="./novedades.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
         </div>
+      </div>
+
+      </div>
 
       </div>
     </section><!-- End Portfolio Section -->

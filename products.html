@@ -153,11 +153,16 @@
                     <div class="swiper-wrapper align-items-center">
 
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/G1(1).png" alt="" >
+                        <img src="assets/img/portfolio/G1(2).png" alt="">
                       </div>
-
                       <div class="swiper-slide">
                         <img src="assets/img/portfolio/G1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/G1(1).png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/G1(3).png" alt="">
                       </div>
 
                       <div class="swiper-slide">
@@ -177,16 +182,17 @@
                 <div class="portfolio-info">
                   <div> <a><button onclick="toggleLanguage()">Spanish/English</button></a></div>
                   <section id="portfolio-info1">
-                    <h3>Product Details:</h3> 
-                   
-                    <ul><script>
-                      var isEnglish = true; // Flag to track the current language
+                    <h3>Product Details:</h3>
 
-                      function toggleLanguage() {
-                        var contentElement = document.getElementById('portfolio-info1'); // Get the content element
+                    <ul>
+                      <script>
+                        var isEnglish = true; // Flag to track the current language
 
-                        if (isEnglish) {
-                          contentElement.innerHTML = `
+                        function toggleLanguage() {
+                          var contentElement = document.getElementById('portfolio-info1'); // Get the content element
+
+                          if (isEnglish) {
+                            contentElement.innerHTML = `
                     <div>
                       <h3>Product Details:</h3> 
                        <ul>
@@ -202,9 +208,9 @@
                     </ul></div>
                   
                             `;
-                          isEnglish = false;
-                        } else {
-                          contentElement.innerHTML = `
+                            isEnglish = false;
+                          } else {
+                            contentElement.innerHTML = `
                     <div>
                       <h3>Producto Detalle:</h3> 
                       <ul>
@@ -220,29 +226,29 @@
                     </ul>
                     </div>
                             `;
-                          isEnglish = true;
+                            isEnglish = true;
+                          }
                         }
-                      }
-                    </script>
-                    <ul>
+                      </script>
+                      <ul>
 
-                      <li><strong>Input:</strong> 5V/2A or 9V/1.67A</li>
-                      <li><strong>Best charging distance: </strong>0-8 mm</li>
-                      <li><strong>Charging efficiency:</strong> >72%</li>
-                      <li><strong>Inerfac type: </strong>Type-C</li>
-                      <li><strong>Executive standard: </strong>Qi/GB4943.1-2011</li>
-                      <li><strong>Compatible: </strong>The phone complies with QI support wireless charging</li>
-                      <li><strong>Working temperature: </strong>-20C-60C</li>
-                      <li><strong>Test type:</strong> CE,ROHS,FCC</li>
+                        <li><strong>Input:</strong> 5V/2A or 9V/1.67A</li>
+                        <li><strong>Best charging distance: </strong>0-8 mm</li>
+                        <li><strong>Charging efficiency:</strong> >72%</li>
+                        <li><strong>Inerfac type: </strong>Type-C</li>
+                        <li><strong>Executive standard: </strong>Qi/GB4943.1-2011</li>
+                        <li><strong>Compatible: </strong>The phone complies with QI support wireless charging</li>
+                        <li><strong>Working temperature: </strong>-20C-60C</li>
+                        <li><strong>Test type:</strong> CE,ROHS,FCC</li>
 
-                    </ul>
+                      </ul>
                   </section>
                 </div>
               </div>
               <div class="section-title" id="title">
                 <h2><a href="products-details.html">Other Products</a></h2>
 
-              
+
               </div>
 
               <ul id="portfolio-flters" class="d-flex justify-content-center">
